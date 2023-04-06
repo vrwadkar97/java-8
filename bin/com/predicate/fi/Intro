@@ -1,0 +1,40 @@
+Introduction:-
+
+      Functional Interfaces:-
+      There are predefined functional interfaces in java.util.function package.
+      So these functional interfaces consist of only one abstract method to perform special operations.
+      So these abstract methods can be directly invoked using lambda expressions.
+      
+      so in java 8, java has provided such a predefined functional interfaces as a new feature for carrying out 
+      specific operations using lambda expressions.
+      
+      
+      Following are some of the most commonly used functional interfaces>>
+      
+      1:-Predicate
+      2:-Function
+      3:-Supplier
+      4:-Consumer
+      
+      1:-Predicate:-
+                This interface consist of test(T t) method which is used for conditional checks.
+                For ex:-To check whether provided condition is true or false.
+                
+                the return type for this method is boolean so it will always return true or false.
+                
+       public interface Predicate<T> {
+       
+       public boolean test(T t);
+       
+       //This T can be anything like String,Integer,Class
+       
+       }
+       
+       Joining of Predicates:-We can join predicates to get the results based on two conditions that we set using LE.
+       
+       p1.and.p2.test();
+       p1.or.p2.test();
+       p1.negate();
+       
+       
+
